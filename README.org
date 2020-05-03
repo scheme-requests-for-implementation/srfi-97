@@ -4,6 +4,8 @@
 
 
 
+keywords: [[https://srfi.schemers.org/?keywords=modules][Modules]]
+
 This repository hosts [[https://srfi.schemers.org/srfi-97/][SRFI 97]]: SRFI Libraries, a [[https://srfi.schemers.org/][Scheme Request for Implementation]].
 
 This SRFI is in /final/ status.
