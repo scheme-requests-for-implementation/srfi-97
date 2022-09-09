@@ -1,4 +1,4 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 3.2 Final//EN">
+<!DOCTYPE html>
 <html><head>
   <title>SRFI 97: SRFI Libraries</title>
   <meta charset="utf-8" />
@@ -51,6 +51,7 @@ David Van Horn
 <li><a href="#abstract">Abstract</a></li>
 <li><a href="#rationale">Rationale</a></li>
 <li><a href="#specification">Specification</a></li>
+<li>
 <ul>
     <li><a href="#referencing">Referencing SRFI Libraries</a></li>
     <li><a href="#naming">Naming convention</a></li>
@@ -60,7 +61,7 @@ David Van Horn
     <li><a href="#future">Future SRFIs</a></li>
     <li><a href="#existing">Existing SRFIs and R<sup>6</sup>RS</a></li>
     <li><a href="#relation">Relation to SRFIs 0 and 7</a></li>
-</ul>
+</ul></li>
 <li><a href="#implementation">Implementation</a></li>
 <li><a href="#acknowledgements">Acknowledgments</a></li>
 <li><a href="#references">References</a></li>
@@ -182,7 +183,7 @@ A SRFI library reference has the following form,
 <code>(srfi :<em>&lt;uinteger 10&gt;</em> <em>&lt;identifier&gt;</em> ...)</code>,
 </blockquote>
 
-where <code><em>&lt;identifier&gt;</em></code> is one of the included
+<p>where <code><em>&lt;identifier&gt;</em></code> is one of the included
 SRFI library names defined below, and <code><em>&lt;uinteger
 10&gt;</em></code> is a SRFI number.  The non-terminals
 <code>&lt;uinteger 10&gt;</code> and <code>&lt;identifier&gt;</code>
@@ -199,15 +200,14 @@ reasonable, if somewhat arbitrary, way to render the number as an
 identifier.  The issue of mapping library references to file paths is
 left completely unspecified by this SRFI and R<sup>6</sup>RS.</p>
 
-A SRFI Library can be referenced by number, as in
+<p>A SRFI Library can be referenced by number, as in</p>
 <blockquote>
 <code>(srfi :1)</code>,
 </blockquote>
-or equivalently using the library's name, as in
+<p>or equivalently using the library's name, as in</p>
 <blockquote>
 <code>(srfi :1 lists)</code>.
 </blockquote>
-</p>
 
 <p class="discussionnote">
 <em>Discussion:</em>
@@ -230,12 +230,11 @@ likelihood that the correct library is imported.
 <p>The remaining identifier subforms are used to name sublibraries
 within a SRFI Library.  For example, SRFI 41, Streams, defines
 <code>primitive</code> and <code>derived</code> libraries within the
-<code>streams</code> library.  These can be referenced as
+<code>streams</code> library.  These can be referenced as</p>
 <blockquote>
 <code>(srfi :41 streams primitive)</code>,<br/>
 <code>(srfi :41 streams derived)</code>.
 </blockquote>
-</p>
 
 
 
@@ -519,7 +518,7 @@ thank all those who participated during the draft period of this SRFI.
       <dd><a href="https://www.larcenists.org/">https://www.larcenists.org/</a></dd>
 
       <dt class="ref">PLT Scheme</dt>
-      <dd><a href="https://plt-scheme.org/">http://plt-scheme.org/<a></dd>
+      <dd><a href="https://plt-scheme.org/">https://plt-scheme.org/</a></dd>
 
       <dt class="ref">Scheme 48</dt>
       <dd><a href="https://www.s48.org/">https://www.s48.org/</a></dd>
@@ -563,7 +562,7 @@ TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
 SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 
     </p><hr>
-    <address>Editor: <a href="mailto:srfi minus editors at srfi dot schemers dot org">Donovan Kolbly</a></address>
+    <address>Editor: <a href="mailto:srfi+minus+editors+at+srfi+dot+schemers+dot+org">Donovan Kolbly</a></address>
   </body></html>
 
 
